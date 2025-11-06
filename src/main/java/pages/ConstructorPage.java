@@ -14,7 +14,6 @@ public class ConstructorPage {
     private WebDriverWait wait;
     private JavascriptExecutor js;
 
-    // Упрощенные локаторы - кликаем на span напрямую через JS
     private By bunsTab = By.xpath("//span[text()='Булки']");
     private By saucesTab = By.xpath("//span[text()='Соусы']");
     private By fillingsTab = By.xpath("//span[text()='Начинки']");
