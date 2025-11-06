@@ -14,7 +14,6 @@ public class Header {
     private WebDriverWait wait;
     private JavascriptExecutor js;
 
-    // Локаторы
     private By constructorLink = By.xpath("//a[.//p[text()='Конструктор']]");
     private By logo = By.xpath("//a[@href='/']");
     private By personalAccountLink = By.xpath("//a[@href='/account']");

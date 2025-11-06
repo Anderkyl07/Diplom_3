@@ -10,7 +10,7 @@ public class MainPage {
     private final WebDriver driver;
     private final WebDriverWait wait;
 
-    // Локаторы
+
     private final By loginAccountButton = By.xpath("//button[text()='Войти в аккаунт']");
     private final By makeBurgerHeader = By.xpath("//h1[text()='Соберите бургер']");
     private final By bunsTab = By.xpath("//span[text()='Булки']");
@@ -26,7 +26,7 @@ public class MainPage {
 
     public MainPage open() {
         driver.get("https://stellarburgers.education-services.ru/");
-        // Надежная проверка - либо заголовок, либо кнопка заказа
+
         wait.until(ExpectedConditions.or(
                 ExpectedConditions.visibilityOfElementLocated(makeBurgerHeader),
                 ExpectedConditions.visibilityOfElementLocated(placeOrderButton)
@@ -52,7 +52,7 @@ public class MainPage {
         return this;
     }
 
-    // Методы для работы с табами конструктора
+
     public MainPage clickBunsTab() {
         wait.until(ExpectedConditions.elementToBeClickable(bunsTab)).click();
         return this;
